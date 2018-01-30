@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC045CD32014DBCE00CFF9B4 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC045CD22014DBCE00CFF9B4 /* Player.swift */; };
+		EC09CD70201879660080DA1B /* RingBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC09CD6F201879660080DA1B /* RingBuffer.swift */; };
 		EC90D7852010DD2900E2A944 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC90D7842010DD2900E2A944 /* AppDelegate.swift */; };
 		EC90D7872010DD2900E2A944 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = EC90D7862010DD2900E2A944 /* GameScene.sks */; };
 		EC90D7892010DD2900E2A944 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = EC90D7882010DD2900E2A944 /* Actions.sks */; };
@@ -16,6 +18,7 @@
 		EC90D7922010DD2900E2A944 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC90D7912010DD2900E2A944 /* Assets.xcassets */; };
 		EC90D7952010DD2900E2A944 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC90D7932010DD2900E2A944 /* LaunchScreen.storyboard */; };
 		EC90D7A02010DD2A00E2A944 /* OrmisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC90D79F2010DD2A00E2A944 /* OrmisTests.swift */; };
+		EC90D7AB2010E44400E2A944 /* SpinnyNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC90D7AA2010E44400E2A944 /* SpinnyNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC045CD22014DBCE00CFF9B4 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		EC09CD6F201879660080DA1B /* RingBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingBuffer.swift; sourceTree = "<group>"; };
 		EC90D7812010DD2900E2A944 /* Ormis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ormis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC90D7842010DD2900E2A944 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC90D7862010DD2900E2A944 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -42,6 +47,7 @@
 		EC90D79B2010DD2A00E2A944 /* OrmisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrmisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC90D79F2010DD2A00E2A944 /* OrmisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrmisTests.swift; sourceTree = "<group>"; };
 		EC90D7A12010DD2A00E2A944 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC90D7AA2010E44400E2A944 /* SpinnyNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnyNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,9 @@
 				EC90D7912010DD2900E2A944 /* Assets.xcassets */,
 				EC90D7932010DD2900E2A944 /* LaunchScreen.storyboard */,
 				EC90D7962010DD2900E2A944 /* Info.plist */,
+				EC90D7AA2010E44400E2A944 /* SpinnyNode.swift */,
+				EC045CD22014DBCE00CFF9B4 /* Player.swift */,
+				EC09CD6F201879660080DA1B /* RingBuffer.swift */,
 			);
 			path = Ormis;
 			sourceTree = "<group>";
@@ -212,7 +221,10 @@
 			files = (
 				EC90D78B2010DD2900E2A944 /* GameScene.swift in Sources */,
 				EC90D78D2010DD2900E2A944 /* GameViewController.swift in Sources */,
+				EC90D7AB2010E44400E2A944 /* SpinnyNode.swift in Sources */,
+				EC045CD32014DBCE00CFF9B4 /* Player.swift in Sources */,
 				EC90D7852010DD2900E2A944 /* AppDelegate.swift in Sources */,
+				EC09CD70201879660080DA1B /* RingBuffer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

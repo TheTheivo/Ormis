@@ -14,6 +14,42 @@ class GameViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let scene = GKScene(fileNamed: "GameScene"){
+            let skView = view as! SKView
+            skView.showsFPS = true
+            skView.showsNodeCount = true
+            skView.ignoresSiblingOrder = true
+            if let sceneNode = scene.rootNode as! GameScene?{
+                sceneNode.scaleMode = .aspectFill
+                skView.presentScene(sceneNode)
+            }
+        }
+    }
+    
+    override var shouldAutorotate: Bool {
+        return false
+    }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        if UIDevice.current.userInterfaceIdiom == .phone {
+            return .allButUpsideDown
+        } else {
+            return .all
+        }
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Release any cached data, images, etc that aren't in use.
+    }
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
+    } 
+
+    /*
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
         // Load 'GameScene.sks' as a GKScene. This provides gameplay related content
         // including entities and graphs.
@@ -61,5 +97,6 @@ class GameViewController: UIViewController {
 
     override var prefersStatusBarHidden: Bool {
         return true
-    }
+    } */
 }
+ 
